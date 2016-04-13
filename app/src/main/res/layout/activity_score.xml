@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout_6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_name"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            >
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_OK"
+            android:id="@+id/btnOK"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            >
+        </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_stock"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            >
+        </TextView>
+
+        <ListView
+            android:id="@+id/lvStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvHwMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_money"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_total_money"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+        </LinearLayout>
+
+<!--
+</RelativeLayout>
+-->
